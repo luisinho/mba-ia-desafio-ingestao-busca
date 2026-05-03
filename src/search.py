@@ -26,7 +26,7 @@ store = PGVector(
 
 for q in queries:
     print(f"\nConsulta: {q}")
-    results = store.similarity_search_with_score(query=q, k=1)
+    results = store.similarity_search_with_score(query=q, k=3)
 
     print("\nTop 1 resultados encontrados:\n")
 
